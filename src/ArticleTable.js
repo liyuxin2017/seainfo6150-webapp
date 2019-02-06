@@ -4,22 +4,33 @@ import ArticleTableRow from './ArticleTableRow';
 
 const ArticleTable = ({ articles }) => (
 
-  <table>
-  {
-    // this iterates through the articles JSON and
-    // calls your ArticleTableRow component for each article
-    Object.values(articles).map(article => {
-      return <ArticleTableRow
-        key={article.slug}
-        title={article.title}
-        date={article.pubDate}
-        author={article.author}
-        shortText={article.shortText}
-      />
-    })
-  }
+  <table border="1">
+    <caption><h1>Articles</h1></caption>
+    <thead>
+      <tr>
+        <th>Select</th>
+        <th>Status</th>
+        <th>Author</th>
+        <th>Date</th>
+        <th>Short text</th>
+      </tr>
+    </thead>
+    <tbody>
+      {
+        // this iterates through the articles JSON and
+        // calls your ArticleTableRow component for each article
+        Object.values(articles).map(article => {
+          return <ArticleTableRow
+            key={article.slug}
+            title={article.title}
+            date={article.pubDate}
+            author={article.author}
+            shortText={article.shortText}
+            />
+         })
+      }
+    </tbody>
   </table>
-
 );
 
 ArticleTable.propTypes = {
