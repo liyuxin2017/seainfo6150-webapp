@@ -1,0 +1,25 @@
+.container {
+  background-color: white;
+  border: 1px solid red;
+  margin: 3%;
+  padding: 1%;
+}
+
+.title {
+  color: red;
+  font-size: 120%;
+  font-weight: bold;
+}
+
+.text {
+  padding-bottom: 3%;
+}
+
+.author {
+  text-align: right;
+}
+
+.date {
+  text-align: right;
+  font-weight: bold;
+}
