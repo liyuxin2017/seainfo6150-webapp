@@ -1,8 +1,11 @@
 .container {
-  background-color: white;
   border: 1px solid red;
   margin: 3%;
   padding: 1%;
+  display: flex;
+  border-radius: 0.5em;
+  background: linear-gradient(to right, red -25%, #F8F8F8 10%);
+  box-shadow: 0 0.5em 0.5em grey;
 }
 
 .title {
@@ -22,4 +25,8 @@
 .date {
   text-align: right;
   font-weight: bold;
+}
+
+.textArea {
+  width: 80%
 }
