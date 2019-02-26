@@ -1,32 +1,29 @@
 .container {
-  border: 1px solid red;
   margin: 3%;
-  padding: 1%;
+  border: 1px solid red;
+  padding: 5%;
   display: flex;
-  border-radius: 0.5em;
+  flex-direction: column;
   background: linear-gradient(to right, red -25%, #F8F8F8 10%);
-  box-shadow: 0 0.5em 0.5em grey;
+}
+
+.textArea {
+  font-size: 80%;
 }
 
 .title {
   color: red;
-  font-size: 120%;
   font-weight: bold;
+  font-size: 120%;
 }
 
 .text {
-  padding-bottom: 3%;
+  margin-bottom: 15%;
 }
 
 .author {
-  text-align: right;
 }
 
 .date {
-  text-align: right;
   font-weight: bold;
-}
-
-.textArea {
-  width: 80%
 }
